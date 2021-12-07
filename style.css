@@ -16,6 +16,10 @@ h3{
     font-size: large;
 }
 
+button{
+    padding: 5px 10px;
+}
+
 .box {
   width: 900px;
   height: 420px;
