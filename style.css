@@ -77,10 +77,14 @@ h2 {
   padding: 20px 0px;
 }
 
+.banner .input h2,
+.banner .result h2{
+    text-align: left;
+}
+
 .banner .content .input {
   width: 50%;
   text-align: left;
-
 }
 .banner .content .result {
   width: 50%;
