@@ -27,32 +27,51 @@
                 <div class="input">
                     <h2>Answer the following questtions to determine if someone is an:</h2>
                     <h3>Do you talk to Animals:</h3>
-                    <select>
-                        <option value="a">only to do tricks</option>
-                        <option value="b">of course, who doesn’t</option>
-                        <option value="c">only to deliver profound messages</option>
+                    <select id="mySelect1">
+                        <option value="1">only to do tricks</option>
+                        <option value="2">of course, who doesn’t</option>
+                        <option value="3">only to deliver profound messages</option>
                     </select>
                     <h3>Do you eat?</h3>
-                    <select>
-                        <option value="a">Human</option>
-                        <option value="b">Cow</option>
-                        <option value="c">Rice</option>
+                    <select id="mySelect2">
+                        <option value="1">Cow</option>
+                        <option value="2">Human</option>
+                        <option value="3">Rice</option>
                     </select>
                     <h3>How do you feel about the movie wall-e</h3>
-                    <select>
-                        <option value="a">I love wall-e</option>
-                        <option value="b">I don't like wall-e</option>
-                        <option value="c">What's it??</option>
-                    </select>
+                    <select id="mySelect3">
+                        <option value="1">I love wall-e</option>
+                        <option value="2">I don't like wall-e</option>
+                        <option value="3">What's it??</option>
+                    </select><br>
+                    <button onclick="myFunction()">Determine</button>
                 </div>
                 <div class="result">
                     <h2>Result</h2>
-
+                    <h2 id="demo"></h2>
+                    <img src="" id="imgClickAndChange"/>
                 </div>
             </div>
-            <button>Determine</button>
+            
         </div>
 
+        <script>
+            function myFunction() {
+                var a = document.getElementById("mySelect1");
+                var b = document.getElementById("mySelect2");
+                var c = document.getElementById("mySelect3");
+
+                if (a.value == '1' || b.value == '2' || c.value == '3') {
+                    document.getElementById("demo").innerHTML = "You're an alien";
+                    document.getElementById("imgClickAndChange").src = "./img/alien.jpg"
+                } else {
+                    document.getElementById("demo").innerHTML = "You're an Human";
+                    document.getElementById("imgClickAndChange").src = "./img/human.jpg"
+                }
+            }
+        </script>
+        </script>
 </body>
+
 
 </html>
