@@ -64,7 +64,13 @@
                 if (a.value == '1' || b.value == '2' || c.value == '3') {
                     document.getElementById("demo").innerHTML = "You're an alien";
                     document.getElementById("imgClickAndChange").src = "./img/alien.jpg"
-                } else {
+                } 
+                else if (a.value == '2' || b.value == '3' || c.value == '1')
+                {
+                    document.getElementById("demo").innerHTML = "You're an Normal";
+                    document.getElementById("imgClickAndChange").src = "./img/noraml.jpg"
+                }
+                else {
                     document.getElementById("demo").innerHTML = "You're an Human";
                     document.getElementById("imgClickAndChange").src = "./img/human.jpg"
                 }
